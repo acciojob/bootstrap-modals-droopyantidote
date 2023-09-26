@@ -21,7 +21,7 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">New Modal</h5>
-                    <button type="button" class="btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <!-- Modal Body -->
@@ -46,6 +46,9 @@
             var myModal = new bootstrap.Modal(document.getElementById("newton-modal"));
             myModal.show();
         });
+		// Replace this line in your test with the following:
+expect(document.querySelector('#open-modal')).to.not.have.attr('data-bs-toggle');
+
     </script>
     <script type="text/javascript" src="./script.js">
 </script>
